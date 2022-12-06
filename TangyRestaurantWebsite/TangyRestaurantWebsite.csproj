@@ -25,6 +25,7 @@
     <None Remove="Microsoft.AspNetCore.Http.Abstractions" />
     <None Remove="Microsoft.Extensions.Hosting.Abstractions" />
     <None Remove="Microsoft.AspNetCore.Hosting.Server.Abstractions" />
+    <None Remove="Views\MenuItems\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.0" />
@@ -54,5 +55,6 @@
     <Folder Include="Views\SubCategory\" />
     <Folder Include="Extensions\" />
     <Folder Include="Models\MenuItemViewModels\" />
+    <Folder Include="Views\MenuItems\" />
   </ItemGroup>
 </Project>

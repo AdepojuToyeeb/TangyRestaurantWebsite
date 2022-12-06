@@ -15,7 +15,7 @@ namespace TangyRestaurantWebsite.Models
         public string Description { get; set; }
         public string Image { get; set; }
         public string Spicyness { get; set; }
-        public enum EScipy { NA = 0, Spicy = 1, VerySpicy = 2 }
+        public enum Espicy { NA = 0, Spicy = 1, VerySpicy = 2 }
 
         [Range(1, int.MaxValue, ErrorMessage = "Price should be greater than ${1}")]
         public double Price { get; set; }
