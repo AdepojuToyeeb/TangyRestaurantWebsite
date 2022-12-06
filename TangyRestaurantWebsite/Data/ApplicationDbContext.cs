@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Emit;
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using TangyRestaurantWebsite.Models;
@@ -27,6 +28,20 @@ public class ApplicationDbContext : DbContext
             .HasOne(o => o.MyCategory)
             .WithMany()
             .HasForeignKey(o => o.CategoryId);
+
+
+        modelBuilder.Entity<MenuItem>()
+            .HasKey(s => s.Id);
+
+        modelBuilder.Entity<MenuItem>()
+                    .HasOne(m => m.Category)
+                    .WithMany()
+                    .HasForeignKey(m => m.CategoryId);
+
+        modelBuilder.Entity<MenuItem>()
+                    .HasOne(m => m.SubCategory)
+                    .WithMany()
+                    .HasForeignKey(m => m.SubCategoryId);
 
         base.OnModelCreating(modelBuilder);
 

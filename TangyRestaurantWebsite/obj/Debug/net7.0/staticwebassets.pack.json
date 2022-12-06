@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets/TangyRestaurantWebsite.bundle.scp.css"
     },
     {
+      "Id": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/Images/Default.jpg",
+      "PackagePath": "staticwebassets/Images/Default.jpg"
+    },
+    {
+      "Id": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/Images/twitter_FiP46fFXgAAQNyj.jpg",
+      "PackagePath": "staticwebassets/Images/twitter_FiP46fFXgAAQNyj.jpg"
+    },
+    {
       "Id": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -15,6 +27,10 @@
     {
       "Id": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/.DS_Store",
+      "PackagePath": "staticwebassets/lib/bootstrap/.DS_Store"
     },
     {
       "Id": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/LICENSE",

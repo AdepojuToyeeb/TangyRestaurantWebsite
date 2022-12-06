@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lwfQWvzVbHs9zkPLXlDgPZrvgYdchA7Z3nbwbkF3KSA=",
+  "Hash": "l8CbGp5qlM8YCGL46IJUhCXsK2H0gW1lBvIkvGfdHw0=",
   "Source": "TangyRestaurantWebsite",
   "BasePath": "_content/TangyRestaurantWebsite",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/projectbundle/TangyRestaurantWebsite.bundle.scp.css"
     },
     {
+      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/.DS_Store",
+      "SourceId": "TangyRestaurantWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "BasePath": "_content/TangyRestaurantWebsite",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
       "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/css/site.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
@@ -1105,6 +1122,40 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/Images/Default.jpg",
+      "SourceId": "TangyRestaurantWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "BasePath": "_content/TangyRestaurantWebsite",
+      "RelativePath": "Images/Default.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/Default.jpg"
+    },
+    {
+      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/Images/twitter_FiP46fFXgAAQNyj.jpg",
+      "SourceId": "TangyRestaurantWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "BasePath": "_content/TangyRestaurantWebsite",
+      "RelativePath": "Images/twitter_FiP46fFXgAAQNyj.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/twitter_FiP46fFXgAAQNyj.jpg"
+    },
+    {
       "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/js/site.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
@@ -1120,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/.DS_Store",
+      "SourceId": "TangyRestaurantWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "BasePath": "_content/TangyRestaurantWebsite",
+      "RelativePath": "lib/bootstrap/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/.DS_Store"
     },
     {
       "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/.DS_Store",
