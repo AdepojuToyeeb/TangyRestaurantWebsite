@@ -21,9 +21,14 @@
     <None Remove="Views\SubCategory\" />
     <None Remove="Extensions\" />
     <None Remove="Models\MenuItemViewModels\" />
+    <None Remove="AspNetCore.Mvc.Routes.DebuggingLoggerMiddleware" />
+    <None Remove="Microsoft.AspNetCore.Http.Abstractions" />
+    <None Remove="Microsoft.Extensions.Hosting.Abstractions" />
+    <None Remove="Microsoft.AspNetCore.Hosting.Server.Abstractions" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0" />
@@ -37,6 +42,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="1.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="7.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
+    <PackageReference Include="AspNetCore.Mvc.Routes.DebuggingLoggerMiddleware" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>

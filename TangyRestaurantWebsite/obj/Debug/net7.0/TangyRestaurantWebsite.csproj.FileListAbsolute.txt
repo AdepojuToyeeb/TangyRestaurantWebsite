@@ -71,3 +71,4 @@
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/TangyRestaurantWebsite.pdb
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/TangyRestaurantWebsite.genruntimeconfig.cache
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/ref/TangyRestaurantWebsite.dll
+/Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/AspNetCore.Mvc.Routes.DebuggingLoggerMiddleware.dll
