@@ -122,6 +122,33 @@ namespace TangyRestaurantWebsite.Controllers
             }
             return View(coupons);
         }
+
+        //GET method for Delete
+        public async Task<IActionResult> Delete(int? Id)
+        {
+            if (Id == null)
+            {
+                return NotFound();
+            }
+            var coupon = await _db.Coupons.SingleOrDefaultAsync(m => m.Id == Id);
+            if (coupon == null)
+            {
+                return NotFound();
+            }
+            return View(coupon);
+        }
+
+        //POST method for DELETE
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult>DeleteConfirmed(int id)
+        {
+            var coupons = await _db.Coupons.SingleOrDefaultAsync(m => m.Id == id);
+            _db.Coupons.Remove(coupons);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }
 
