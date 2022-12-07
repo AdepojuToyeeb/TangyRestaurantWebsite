@@ -83,7 +83,8 @@ namespace TangyRestaurantWebsite.Controllers
         }
 
         //POST method for Edit
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult>Edit(int Id, Coupons coupons)
         {
             if (Id != coupons.Id)
@@ -95,6 +96,8 @@ namespace TangyRestaurantWebsite.Controllers
             if (ModelState.IsValid)
             {
                 var files = HttpContext.Request.Form.Files;
+                var errors = ModelState.Values.SelectMany(v => v.Errors);
+
                 if (files[0] != null && files[0].Length > 0)
                 {
                     byte[] p1 = null;
@@ -106,7 +109,7 @@ namespace TangyRestaurantWebsite.Controllers
                             p1 = ms1.ToArray();
                         }
                     }
-                    coupons.Picture = p1;
+                    couponFromDb.Picture = p1;
                 }
                 couponFromDb.MinimumAmount = coupons.MinimumAmount;
                 couponFromDb.Name = coupons.Name;

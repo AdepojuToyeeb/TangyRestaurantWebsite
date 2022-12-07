@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Category</h2>
+<h2>Coupons</h2>
 
 <p>
     <partial name="_CreateButtonPartial" />
@@ -46,12 +46,8 @@
                         @Html.DisplayFor(modelItem => item.isActive)
                     </td>
                     <td>
-                        <a class="btn btn-primary" href="@Url.Action("Edit/"+item.Id)">
-                            <i class="fas fa-edit"></i>
-                        </a>
-                        <a class="btn btn-danger" href="@Url.Action("Delete/"+item.Id)">
-                            <i class="fas fa-trash-alt"></i>
-                        </a>
+                        <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-edit"></i>&nbsp; Edit</a>
+                        <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id"><i class="fas fa-trash-alt"></i>&nbsp; Delete</a>
                     </td>
                 </tr>
             }
