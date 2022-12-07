@@ -19,11 +19,11 @@ namespace TangyRestaurantWebsite.Models
 		public double Discount { get; set; }
 
 		[Required]
-		[Display(Name = "Minimum amount")]
+		[Display(Name = "Minimum Amount")]
 		public double MinimumAmount { get; set; }
 
-		[Required]
-		public byte[] Picture { get; set; }
+        public byte[]? Picture { get; set; }
+
 		public bool isActive { get; set; }
 	}
 }

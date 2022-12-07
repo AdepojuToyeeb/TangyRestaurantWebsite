@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/abc/Projects/Tangy/TangyRestaurantWebsite/Views/Coupons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cG9ucy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/abc/Projects/Tangy/TangyRestaurantWebsite/Views/Coupons/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cG9ucy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using TangyRestaurantWebsite.Data;
 using TangyRestaurantWebsite.Models;
 
+
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace TangyRestaurantWebsite.Controllers
@@ -37,12 +38,15 @@ namespace TangyRestaurantWebsite.Controllers
         //POST action method for Create Action
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create (Coupons coupons)
+        public async Task<IActionResult> Create(Coupons coupons)
         {
-            if(ModelState.IsValid)
+            var errors = ModelState.Values.SelectMany(v => v.Errors);
+            var files = HttpContext.Request.Form.Files;
+
+            if (ModelState.IsValid)
             {
-                var files = HttpContext.Request.Form.Files;
-                if (files[0]!=null && files[0].Length>0)
+                //var files = HttpContext.Request.Form.Files;
+                if (files[0] != null && files[0].Length > 0)
                 {
                     byte[] p1 = null;
                     using (var fs1 = files[0].OpenReadStream())
@@ -53,11 +57,65 @@ namespace TangyRestaurantWebsite.Controllers
                             p1 = ms1.ToArray();
                         }
                     }
-
+                    coupons.Picture = p1;
                     _db.Coupons.Add(coupons);
                     await _db.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
+                
+            }
+            return View(coupons);
+        }
+
+        //GET method for Edit
+        public async Task<IActionResult>Edit(int? Id)
+        {
+            if(Id == null)
+            {
+                return NotFound();
+            }
+            var coupon = await _db.Coupons.SingleOrDefaultAsync(m => m.Id == Id);
+            if(coupon == null)
+            {
+                return NotFound();
+            }
+            return View(coupon);
+        }
+
+        //POST method for Edit
+
+        public async Task<IActionResult>Edit(int Id, Coupons coupons)
+        {
+            if (Id != coupons.Id)
+            {
+                return NotFound();
+            }
+
+            var couponFromDb = await _db.Coupons.Where(c => c.Id == Id).FirstOrDefaultAsync();
+            if (ModelState.IsValid)
+            {
+                var files = HttpContext.Request.Form.Files;
+                if (files[0] != null && files[0].Length > 0)
+                {
+                    byte[] p1 = null;
+                    using (var fs1 = files[0].OpenReadStream())
+                    {
+                        using (var ms1 = new MemoryStream())
+                        {
+                            fs1.CopyTo(ms1);
+                            p1 = ms1.ToArray();
+                        }
+                    }
+                    coupons.Picture = p1;
+                }
+                couponFromDb.MinimumAmount = coupons.MinimumAmount;
+                couponFromDb.Name = coupons.Name;
+                couponFromDb.Discount = coupons.Discount;
+                couponFromDb.CouponType = coupons.CouponType;
+                couponFromDb.isActive = coupons.isActive;
+
+                await _db.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
             return View(coupons);
         }
