@@ -1,5 +1,13 @@
-﻿@{
+﻿@model TangyRestaurantWebsite.Models.HomeViewModel.IndexViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-
+@foreach(var category in Model.Category)
+{
+        <h3 class="text-sucess">@category.Name</h3>
+        <div class="row" style="padding-bottom:50px;">
+            @Html.Partial("_ThumbnailAreaPartial",Model.MenuItem.Where(u=>u.Category.Name.Equals(category.Name)))
+        </div>
+}
