@@ -1,7 +1,9 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TangyRestaurantWebsite.Data;
 using TangyRestaurantWebsite.Models;
+using TangyRestaurantWebsite.Models.HomeViewModel;
 
 namespace TangyRestaurantWebsite.Controllers;
 
@@ -18,11 +20,14 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        IndexViewModel IndexVM = new IndexViewModel
-        return View();
+        IndexViewModel IndexVM = new IndexViewModel()
+        {
+            MenuItem = await _db.MenuItems.Include(m => m.Category).Include(m => m.SubCategory).ToListAsync(),
+            Category = _db.Category.OrderBy(c=>c.DisplayOrder),
+            Coupons = _db.Coupons.Where(c=>c.isActive==true).ToList()
+        };
+        return View(IndexVM);
     }
-    
-
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
