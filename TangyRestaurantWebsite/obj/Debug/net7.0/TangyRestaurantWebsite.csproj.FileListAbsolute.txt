@@ -6,6 +6,7 @@
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/TangyRestaurantWebsite.runtimeconfig.json
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/TangyRestaurantWebsite.dll
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/TangyRestaurantWebsite.pdb
+/Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/AspNetCore.Mvc.Routes.DebuggingLoggerMiddleware.dll
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/Humanizer.dll
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -71,4 +72,3 @@
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/TangyRestaurantWebsite.pdb
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/TangyRestaurantWebsite.genruntimeconfig.cache
 /Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/ref/TangyRestaurantWebsite.dll
-/Users/abc/Projects/Tangy/TangyRestaurantWebsite/bin/Debug/net7.0/AspNetCore.Mvc.Routes.DebuggingLoggerMiddleware.dll
