@@ -18,7 +18,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using TangyRestaurantWebsite.Data;
 using TangyRestaurantWebsite.Models;
+using TangyRestaurantWebsite.Utility;
 
 namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
 {
@@ -30,13 +32,17 @@ namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private ApplicationDbContext _db;
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
             IUserStore<ApplicationUser> userStore,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            ApplicationDbContext db,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -44,6 +50,8 @@ namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
+            _db = db;
         }
 
         /// <summary>
@@ -142,6 +150,18 @@ namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
+                    if(!await _roleManager.RoleExistsAsync(SD.AdminEndUser))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(SD.AdminEndUser));
+                    }
+
+                    if (!await _roleManager.RoleExistsAsync(SD.CustomerEndUser))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(SD.CustomerEndUser));
+                    }
+
+                    await _userManager.AddToRoleAsync(user, SD.AdminEndUser);
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var userId = await _userManager.GetUserIdAsync(user);
