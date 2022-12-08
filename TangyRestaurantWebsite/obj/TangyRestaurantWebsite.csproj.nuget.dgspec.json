@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/TangyRestaurantWebsite.csproj": {}
+    "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/TangyRestaurantWebsite.csproj": {}
   },
   "projects": {
-    "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/TangyRestaurantWebsite.csproj": {
+    "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/TangyRestaurantWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/TangyRestaurantWebsite.csproj",
+        "projectUniqueName": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/TangyRestaurantWebsite.csproj",
         "projectName": "TangyRestaurantWebsite",
-        "projectPath": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/TangyRestaurantWebsite.csproj",
+        "projectPath": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/TangyRestaurantWebsite.csproj",
         "packagesPath": "/Users/abc/.nuget/packages/",
-        "outputPath": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/",
+        "outputPath": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/abc/.nuget/NuGet/NuGet.Config"

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l8CbGp5qlM8YCGL46IJUhCXsK2H0gW1lBvIkvGfdHw0=",
+  "Hash": "M/WcIzwbQ5MFL5Myc1HY+zlj2W0yCvp4XqhxTNPpa4c=",
   "Source": "TangyRestaurantWebsite",
   "BasePath": "_content/TangyRestaurantWebsite",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "TangyRestaurantWebsite/wwwroot",
       "Source": "TangyRestaurantWebsite",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "/Users/abc/.nuget/packages/microsoft.aspnetcore.identity.ui/7.0.0/staticwebassets/V5/lib/jquery/LICENSE.txt"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/bundle/TangyRestaurantWebsite.styles.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/bundle/TangyRestaurantWebsite.styles.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/bundle/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "TangyRestaurantWebsite.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/bundle/TangyRestaurantWebsite.styles.css"
+      "OriginalItemSpec": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/bundle/TangyRestaurantWebsite.styles.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/projectbundle/TangyRestaurantWebsite.bundle.scp.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/projectbundle/TangyRestaurantWebsite.bundle.scp.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/projectbundle/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "TangyRestaurantWebsite.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/projectbundle/TangyRestaurantWebsite.bundle.scp.css"
+      "OriginalItemSpec": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/obj/Debug/net7.0/scopedcss/projectbundle/TangyRestaurantWebsite.bundle.scp.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/.DS_Store",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/.DS_Store",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/css/site.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/css/site.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/favicon.ico",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/favicon.ico",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/Images/Default.jpg",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/Images/Default.jpg",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "Images/Default.jpg",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot/Images/Default.jpg"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/Images/twitter_FiP46fFXgAAQNyj.jpg",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/Images/twitter_FiP46fFXgAAQNyj.jpg",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "Images/twitter_FiP46fFXgAAQNyj.jpg",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot/Images/twitter_FiP46fFXgAAQNyj.jpg"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/js/site.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/js/site.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/.DS_Store",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/.DS_Store",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/.DS_Store",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/.DS_Store"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/.DS_Store",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/.DS_Store",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/.DS_Store",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/.DS_Store"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/bootstrap/LICENSE",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/lib/jquery/LICENSE.txt",
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abc/Projects/Tangy/TangyRestaurantWebsite/wwwroot/",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
       "BasePath": "_content/TangyRestaurantWebsite",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
