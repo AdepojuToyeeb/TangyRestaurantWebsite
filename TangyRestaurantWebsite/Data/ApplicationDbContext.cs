@@ -6,7 +6,7 @@ using TangyRestaurantWebsite.Models;
 
 namespace TangyRestaurantWebsite.Data;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
@@ -16,6 +16,8 @@ public class ApplicationDbContext : DbContext
     public DbSet<SubCategory> SubCategory { get; set; }
     public DbSet<MenuItem> MenuItems { get; set; }
     public DbSet<Coupons> Coupons { get; set; }
+    public DbSet<ApplicationUser> ApplicationUser { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
