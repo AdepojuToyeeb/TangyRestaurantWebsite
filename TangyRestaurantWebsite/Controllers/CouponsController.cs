@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TangyRestaurantWebsite.Data;
 using TangyRestaurantWebsite.Models;
+using TangyRestaurantWebsite.Utility;
 
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace TangyRestaurantWebsite.Controllers
 {
+    [Authorize(Roles = SD.AdminEndUser)]
+
     public class CouponsController : Controller
     {
         private readonly ApplicationDbContext _db;

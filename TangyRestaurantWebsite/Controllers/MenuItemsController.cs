@@ -10,13 +10,18 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TangyRestaurantWebsite.Models;
 using TangyRestaurantWebsite.Utility;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace TangyRestaurantWebsite.Controllers
 {
+    [Authorize(Roles = SD.AdminEndUser)]
+
     public class MenuItemsController : Controller
     {
+
 
         private readonly ApplicationDbContext _db;
         private readonly IWebHostEnvironment hostingEnvironment;
