@@ -71,6 +71,9 @@ public class HomeController : Controller
 
             await _db.SaveChangesAsync();
 
+            var count = _db.ShoppingCart.Where(c => c.ApplicationUserId == CartObject.ApplicationUserId).ToList().Count;
+            HttpContext.Session.SetInt32("CartCount", count);
+
             return RedirectToAction(nameof(Index));
         }
 

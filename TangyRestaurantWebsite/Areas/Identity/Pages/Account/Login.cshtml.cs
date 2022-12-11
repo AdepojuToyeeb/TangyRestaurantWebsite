@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using TangyRestaurantWebsite.Models;
+using TangyRestaurantWebsite.Data;
 
 namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
 {
@@ -22,11 +23,14 @@ namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private ApplicationDbContext _db;
 
-        public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger)
+
+        public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger, ApplicationDbContext db)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _db = db;
         }
 
         /// <summary>
@@ -118,6 +122,9 @@ namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+                    var user = _db.Users.Where(u => u.Email == model.Email).FirstorDefault();
+                    var count = _db.ShoppingCart.Where(u => u.ApplicationUserId == user.Id).ToList().Count();
+                    HttpContext.Session.SetInt32("CartCount", count);
                     _logger.LogInformation("User logged in.");
                     return LocalRedirect(returnUrl);
                 }

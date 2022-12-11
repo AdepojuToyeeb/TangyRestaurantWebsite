@@ -164,6 +164,8 @@ namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
 
                     _logger.LogInformation("User created a new account with password.");
 
+
+
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -185,6 +187,8 @@ namespace TangyRestaurantWebsite.Areas.Identity.Pages.Account
                         await _signInManager.SignInAsync(user, isPersistent: false);
                         return LocalRedirect(returnUrl);
                     }
+
+                    HttpContext.Session.SetInt32("CartCount", 0);
                 }
                 foreach (var error in result.Errors)
                 {
