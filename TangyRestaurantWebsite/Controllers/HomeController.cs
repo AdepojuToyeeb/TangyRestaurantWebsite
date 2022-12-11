@@ -37,7 +37,9 @@ public class HomeController : Controller
             MenuItem = MenuItemFromDb,
             MenuItemId = MenuItemFromDb.Id
         };
+        return View(CartObj);
     }
+
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -30,7 +30,7 @@
                         <p>@item.Description</p>
                         <br />
                     </div>
-                    <a asp-action="Details" class="btn btn-success" asp-route-id="@item.Id">Details</a>
+                    <a asp-action="Details" asp-controller="Home" asp-action="Details" class="btn btn-success" asp-route-id="@item.Id">Details</a>
                 </div>
                 <div class="col-3">
                     <img src="@item.Image" width="90%" style="border-radius:5px; border:1px solid #bbb9b9;" />
