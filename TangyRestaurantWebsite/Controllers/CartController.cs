@@ -58,7 +58,32 @@ namespace TangyRestaurantWebsite.Controllers
 
             return View(detailCart);
         }
-    
-}
+        public IActionResult Plus(int cartId)
+        {
+            var cart = _db.ShoppingCart.Where(c => c.Id == cartId).FirstOrDefault();
+            cart.Count += 1;
+            _db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Minus(int cartId)
+        {
+            var cart = _db.ShoppingCart.Where(c => c.Id == cartId).FirstOrDefault();
+            if (cart.Count == 1)
+            {
+                _db.ShoppingCart.Remove(cart);
+                _db.SaveChanges();
+
+                var cnt = _db.ShoppingCart.Where(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count;
+                HttpContext.Session.SetInt32("CartCount", cnt);
+            }
+            else
+            {
+                cart.Count -= 1;
+                _db.SaveChanges();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+    }
 }
 
