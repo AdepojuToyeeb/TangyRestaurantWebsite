@@ -17,6 +17,8 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<MenuItem> MenuItems { get; set; }
     public DbSet<Coupons> Coupons { get; set; }
     public DbSet<ApplicationUser> ApplicationUser { get; set; }
+    public DbSet<ShoppingCart> ShoppingCart { get; set; }
+
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
