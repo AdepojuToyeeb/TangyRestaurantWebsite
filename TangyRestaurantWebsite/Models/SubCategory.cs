@@ -20,7 +20,7 @@ namespace TangyRestaurantWebsite.Models
 		public int CategoryId { get; set; }
 
 		
-		public virtual Category MyCategory { get; set; }
+		public virtual Category? MyCategory { get; set; }
 	}
 }
 

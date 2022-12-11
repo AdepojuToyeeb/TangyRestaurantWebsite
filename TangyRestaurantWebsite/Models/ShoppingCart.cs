@@ -8,23 +8,23 @@ namespace TangyRestaurantWebsite.Models
 	{
 		public int Id { get; set; }
 
-		public string ApplicationUserId { get; set; }
+		public string? ApplicationUserId { get; set; }
 
 		public int MenuItemId { get; set; }
 
 		[NotMapped]
 		[ForeignKey("MenuItemId")]
-		public virtual MenuItem MenuItem { get; set; }
+		public virtual MenuItem? MenuItem { get; set; }
 
 		[NotMapped]
 		[ForeignKey("ApplicationUserId")]
-		public virtual ApplicationUser ApplicationUser { get; set; }
+		public virtual ApplicationUser? ApplicationUser { get; set; }
 
-		[Range(1,int.MaxValue,ErrorMessage = "Please enter a value greated than {1}")]
+		[Range(1,int.MaxValue,ErrorMessage = "Please enter a value greater than {0}")]
 		public int Count { get; set; }
 
 		[NotMapped]
-		public string StatusMessage { get; set; }
+		public string? StatusMessage { get; set; }
 	}
 }
 
