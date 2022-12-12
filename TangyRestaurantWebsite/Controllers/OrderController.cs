@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TangyRestaurantWebsite.Data;
+using TangyRestaurantWebsite.Models;
 using TangyRestaurantWebsite.Models.OrderDetailsViewModel;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -37,6 +38,27 @@ namespace TangyRestaurantWebsite.Controllers
             };
 
             return View(OrderDetailsViewModel);
+        }
+
+        [Authorize]
+        public IActionResult OrderHistory()
+        {
+            var claimsIdentity = (ClaimsIdentity)this.User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            List<OrderDetailsViewModel> OrderDetailsVM = new List<OrderDetailsViewModel>();
+
+            List<OrderHeader> OrderHeaderList = _db.OrderHeader.Where(u => u.UserId == claim.Value).OrderByDescending(u => u.OrderDate).ToList();
+
+            foreach (OrderHeader item in OrderHeaderList)
+            {
+                OrderDetailsViewModel individual = new OrderDetailsViewModel();
+                individual.OrderHeader = item;
+                individual.OrderDetail = _db.OrderDetail.Where(o => o.OrderId == item.Id).ToList();
+                OrderDetailsVM.Add(individual);
+
+            }
+            return View(OrderDetailsVM);
         }
     }
 }
