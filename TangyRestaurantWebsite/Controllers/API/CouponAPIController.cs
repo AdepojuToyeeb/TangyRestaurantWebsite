@@ -13,15 +13,20 @@ namespace TangyRestaurantWebsite.Controllers.API
     [Route("api/[controller]")]
     public class CouponAPIController : Controller
     {
+
         private ApplicationDbContext _db;
+
         public CouponAPIController(ApplicationDbContext db)
         {
             _db = db;
         }
-        // GET: api/values
+
+        // GET: api/<controller>
         [HttpGet]
         public IActionResult Get(double orderTotal, string couponCode = null)
         {
+            //Return string will have :E for error and :S for success at the end
+
             var rtn = "";
             if (couponCode == null)
             {
@@ -36,7 +41,6 @@ namespace TangyRestaurantWebsite.Controllers.API
                 rtn = orderTotal + ":E";
                 return Ok(rtn);
             }
-
             if (couponFromDb.MinimumAmount > orderTotal)
             {
                 rtn = orderTotal + ":E";
@@ -65,4 +69,5 @@ namespace TangyRestaurantWebsite.Controllers.API
 
     }
 }
+
 

@@ -10,7 +10,8 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
+builder.Services.AddRazorPages()
+    .AddRazorRuntimeCompilation();
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 {
     options.Lockout.AllowedForNewUsers = true;

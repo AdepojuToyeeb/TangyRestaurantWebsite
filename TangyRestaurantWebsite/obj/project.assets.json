@@ -262,6 +262,22 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Http/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -422,6 +438,59 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Language": "6.0.0",
+          "Microsoft.CodeAnalysis.Razor": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "6.0.0",
+          "Microsoft.CodeAnalysis.Razor": "6.0.0",
+          "Microsoft.Extensions.DependencyModel": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "buildTransitive/net7.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Razor/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Html.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.0": {
         "type": "package",
         "compile": {
@@ -429,6 +498,23 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Razor.Runtime/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Html.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Razor": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.0.0": {
@@ -4677,6 +4763,19 @@
         "microsoft.aspnetcore.hosting.server.abstractions.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
+      "sha512": "Y4rs5aMEXY8G7wJo5S3EEt6ltqyOTr/qOeZzfn+hw/fuQj5GppGckMY5psGLETo1U9hcT5MmAhaT5xtusM1b5g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.html.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Html.Abstractions.xml",
+        "microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.html.abstractions.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Http/2.0.0": {
       "sha512": "2YNhcHrGxo2YufA8TYGyaEMIJwikyisZqEzHCRpIuI0D6ZXkA47U/3NJg2r/x5/gGHNM3TXO7DsqH88qRda+yg==",
       "type": "package",
@@ -4888,6 +4987,50 @@
         "microsoft.aspnetcore.mvc.core.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
+      "sha512": "M0h+ChPgydX2xY17agiphnAVa/Qh05RAP8eeuqGGhQKT10claRBlLNO6d2/oSV8zy0RLHzwLnNZm5xuC/gckGA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.razor.extensions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
+        "microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.razor.extensions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/7.0.0": {
+      "sha512": "pAFncd2+yMmA0Z7QcFhf6xh6OxRwF2bi6PbAfXNGHEebf2tnJ4HkevQUGZlH6yTCu61TpsdNXLVsEnjbbDoH6A==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.razor.runtimecompilation/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net7.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets",
+        "buildTransitive/net7.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets",
+        "lib/net7.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.xml",
+        "microsoft.aspnetcore.mvc.razor.runtimecompilation.7.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.razor.runtimecompilation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Razor/2.2.0": {
+      "sha512": "V54PIyDCFl8COnTp9gezNHpUNHk7F9UnerGeZy3UfbnwYvfzbo+ipqQmSgeoESH8e0JvKhRTyQyZquW2EPtCmg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.razor/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.xml",
+        "microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.razor.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Razor.Language/6.0.0": {
       "sha512": "yCtBr1GSGzJrrp1NJUb4ltwFYMKHw/tJLnIDvg9g/FnkGIEzmE19tbCQqXARIJv5kdtBgsoVIdGLL+zmjxvM/A==",
       "type": "package",
@@ -4900,6 +5043,19 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll",
         "microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
         "microsoft.aspnetcore.razor.language.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Razor.Runtime/2.2.0": {
+      "sha512": "7YqK+H61lN6yj9RiQUko7oaOhKtRR9Q/kBcoWNRemhJdTIWOh1OmdvJKzZrMWOlff3BAjejkPQm+0V0qXk+B1w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.razor.runtime/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Runtime.xml",
+        "microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.razor.runtime.nuspec"
       ]
     },
     "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.0.0": {
@@ -11955,6 +12111,9 @@
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.0",
       "Microsoft.AspNetCore.Identity.UI >= 7.0.0",
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 7.0.0",
+      "Microsoft.AspNetCore.Razor >= 2.2.0",
+      "Microsoft.AspNetCore.Razor.Runtime >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.0",
@@ -11965,7 +12124,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite.Design >= 1.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
       "Microsoft.Extensions.Hosting.Abstractions >= 7.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.0",
+      "System.Runtime.CompilerServices.Unsafe >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -12033,6 +12193,18 @@
             "target": "Package",
             "version": "[7.0.0, )"
           },
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Microsoft.AspNetCore.Razor": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Razor.Runtime": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.0, )"
@@ -12080,6 +12252,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "System.Runtime.CompilerServices.Unsafe": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [
