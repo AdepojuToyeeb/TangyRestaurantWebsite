@@ -41,6 +41,9 @@
     <None Remove="Views\Order\" />
     <None Remove="TagHelpers\" />
     <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\UserName\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.0" />
@@ -91,6 +94,9 @@
     <Folder Include="Views\Order\" />
     <Folder Include="TagHelpers\" />
     <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\UserName\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Areas\Identity\Data\TangyRestaurantWebsiteIdentityDbContext.cs" />

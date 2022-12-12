@@ -276,6 +276,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvT3JkZXJTdW1tYXJ5RXhwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/Views/Shared/Components/UserName/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvVXNlck5hbWUvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

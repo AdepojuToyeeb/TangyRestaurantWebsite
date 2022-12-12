@@ -7,8 +7,10 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using TangyRestaurantWebsite.Data;
+using TangyRestaurantWebsite.Extensions;
 using TangyRestaurantWebsite.Models;
 using TangyRestaurantWebsite.Models.OrderDetailsViewModel;
 using TangyRestaurantWebsite.Utility;
@@ -19,11 +21,13 @@ namespace TangyRestaurantWebsite.Controllers
 {
     public class OrderController : Controller
     {
+        private readonly IEmailSender _emailSender;
         private ApplicationDbContext _db;
         private int PageSize = 2;
 
-        public OrderController(ApplicationDbContext db)
+        public OrderController(ApplicationDbContext db, IEmailSender emailSender)
         {
+            _emailSender = emailSender;
             _db = db;
         }
 
@@ -41,7 +45,8 @@ namespace TangyRestaurantWebsite.Controllers
                 OrderHeader = _db.OrderHeader.Where(o => o.Id == id && o.UserId == claim.Value).FirstOrDefault(),
                 OrderDetail = _db.OrderDetail.Where(o => o.OrderId == id).ToList()
             };
-
+            var customerEmail = _db.Users.Where(u => u.Id == OrderDetailsViewModel.OrderHeader.UserId).FirstOrDefault().Email;
+            await _emailSender.SendOrderStatusAsync(customerEmail, OrderDetailsViewModel.OrderHeader.Id.ToString(), SD.StatusSubmitted);
             return View(OrderDetailsViewModel);
         }
 
@@ -121,6 +126,8 @@ namespace TangyRestaurantWebsite.Controllers
             OrderHeader orderHeader = _db.OrderHeader.Find(orderId);
             orderHeader.Status = SD.StatusReady;
             await _db.SaveChangesAsync();
+            var customerEmail = _db.Users.Where(u => u.Id == orderHeader.UserId).FirstOrDefault().Email;
+            await _emailSender.SendOrderStatusAsync(customerEmail, orderHeader.Id.ToString(), SD.StatusReady);
             return RedirectToAction("ManageOrder", "Order");
 
         }
@@ -131,6 +138,8 @@ namespace TangyRestaurantWebsite.Controllers
             OrderHeader orderHeader = _db.OrderHeader.Find(orderId);
             orderHeader.Status = SD.StatusCancelled;
             await _db.SaveChangesAsync();
+            var customerEmail = _db.Users.Where(u => u.Id == orderHeader.UserId).FirstOrDefault().Email;
+            await _emailSender.SendOrderStatusAsync(customerEmail, orderHeader.Id.ToString(), SD.StatusCancelled);
             return RedirectToAction("ManageOrder", "Order");
 
         }
