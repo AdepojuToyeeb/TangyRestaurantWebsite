@@ -192,6 +192,18 @@ namespace TangyRestaurantWebsite.Controllers
 
             return View(OrderDetailsVM);
         }
+
+        [HttpPost]
+        [Authorize(Roles = SD.AdminEndUser)]
+        [ActionName("OrderPickupDetails")]
+        public async Task<IActionResult> OrderPickupDetailsPost(int orderId)
+        {
+            OrderHeader orderHeader = _db.OrderHeader.Find(orderId);
+            orderHeader.Status = SD.StatusCompleted;
+            await _db.SaveChangesAsync();
+            return RedirectToAction("OrderPickup", "Order");
+
+        }
     }
 }
 
