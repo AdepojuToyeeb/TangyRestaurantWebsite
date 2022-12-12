@@ -40,6 +40,7 @@
     <None Remove="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" />
     <None Remove="Views\Order\" />
     <None Remove="TagHelpers\" />
+    <None Remove="ViewComponents\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.0" />
@@ -89,6 +90,7 @@
     <Folder Include="Controllers\API\" />
     <Folder Include="Views\Order\" />
     <Folder Include="TagHelpers\" />
+    <Folder Include="ViewComponents\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Areas\Identity\Data\TangyRestaurantWebsiteIdentityDbContext.cs" />
