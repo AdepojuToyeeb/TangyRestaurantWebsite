@@ -33,6 +33,7 @@
     <None Remove="Areas\Identity\Data\" />
     <None Remove="Models\OrderDetailsViewModel\" />
     <None Remove="Views\Cart\" />
+    <None Remove="Controllers\API\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.0" />
@@ -75,6 +76,7 @@
     <Folder Include="Areas\Identity\Data\" />
     <Folder Include="Models\OrderDetailsViewModel\" />
     <Folder Include="Views\Cart\" />
+    <Folder Include="Controllers\API\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Areas\Identity\Data\TangyRestaurantWebsiteIdentityDbContext.cs" />
