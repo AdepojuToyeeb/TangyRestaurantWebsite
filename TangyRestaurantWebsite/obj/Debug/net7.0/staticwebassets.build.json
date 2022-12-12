@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M/WcIzwbQ5MFL5Myc1HY+zlj2W0yCvp4XqhxTNPpa4c=",
+  "Hash": "2gM8+2OuNALdmA7+RdezIopvgonrA0MB1gr9A+Zk2oI=",
   "Source": "TangyRestaurantWebsite",
   "BasePath": "_content/TangyRestaurantWebsite",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/css/Typeahead.css",
+      "SourceId": "TangyRestaurantWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
+      "BasePath": "_content/TangyRestaurantWebsite",
+      "RelativePath": "css/Typeahead.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Typeahead.css"
+    },
+    {
       "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/favicon.ico",
       "SourceId": "TangyRestaurantWebsite",
       "SourceType": "Discovered",
@@ -1171,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/js/Typeahead.js",
+      "SourceId": "TangyRestaurantWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/",
+      "BasePath": "_content/TangyRestaurantWebsite",
+      "RelativePath": "js/Typeahead.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/Typeahead.js"
     },
     {
       "Identity": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/lib/bootstrap/.DS_Store",

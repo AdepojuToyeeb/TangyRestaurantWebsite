@@ -17,12 +17,20 @@
       "PackagePath": "staticwebassets/Images/twitter_FiP46fFXgAAQNyj.jpg"
     },
     {
+      "Id": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/css/Typeahead.css",
+      "PackagePath": "staticwebassets/css/Typeahead.css"
+    },
+    {
       "Id": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
       "Id": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/js/Typeahead.js",
+      "PackagePath": "staticwebassets/js/Typeahead.js"
     },
     {
       "Id": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/js/site.js",
