@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using TangyRestaurantWebsite.Data;
 using TangyRestaurantWebsite.Models;
 using TangyRestaurantWebsite.Models.OrderDetailsViewModel;
+using TangyRestaurantWebsite.Utility;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -83,6 +84,47 @@ namespace TangyRestaurantWebsite.Controllers
                 _db.SaveChanges();
             }
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Index")]
+        public IActionResult IndexPost()
+        {
+            var claimsIdentity = (ClaimsIdentity)this.User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            detailCart.listCart = _db.ShoppingCart.Where(c => c.ApplicationUserId == claim.Value).ToList();
+
+            detailCart.OrderHeader.OrderDate = DateTime.Now;
+            detailCart.OrderHeader.UserId = claim.Value;
+            detailCart.OrderHeader.Status = SD.StatusSubmitted;
+            OrderHeader orderHeader = detailCart.OrderHeader;
+            _db.OrderHeader.Add(orderHeader);
+            _db.SaveChanges();
+
+            foreach (var item in detailCart.listCart)
+            {
+                item.MenuItem = _db.MenuItems.FirstOrDefault(m => m.Id == item.MenuItemId);
+                OrderDetails orderDetails = new OrderDetails
+                {
+                    MenuItemId = item.MenuItemId,
+                    OrderId = orderHeader.Id,
+                    Description = item.MenuItem.Description,
+                    Name = item.MenuItem.Name,
+                    Price = item.MenuItem.Price,
+                    Count = item.Count
+                };
+                _db.OrderDetail.Add(orderDetails);
+            }
+
+            _db.ShoppingCart.RemoveRange(detailCart.listCart);
+            _db.SaveChanges();
+            HttpContext.Session.SetInt32("CartCount", 0);
+
+            return RedirectToAction("Home", "Index");
+
+
         }
     }
 }
