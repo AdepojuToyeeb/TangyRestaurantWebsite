@@ -53,9 +53,11 @@ namespace TangyRestaurantWebsite.Controllers
 
             foreach (OrderHeader item in OrderHeaderList)
             {
-                OrderDetailsViewModel individual = new OrderDetailsViewModel();
-                individual.OrderHeader = item;
-                individual.OrderDetail = _db.OrderDetail.Where(o => o.OrderId == item.Id).ToList();
+                OrderDetailsViewModel individual = new OrderDetailsViewModel
+                {
+                    OrderHeader = item,
+                    OrderDetail = _db.OrderDetail.Where(o => o.OrderId == item.Id).ToList()
+                };
                 OrderDetailsVM.Add(individual);
 
             }
@@ -71,9 +73,11 @@ namespace TangyRestaurantWebsite.Controllers
 
             foreach (OrderHeader item in OrderHeaderList)
             {
-                OrderDetailsViewModel individual = new OrderDetailsViewModel();
-                individual.OrderHeader = item;
-                individual.OrderDetail = _db.OrderDetail.Where(o => o.OrderId == item.Id).ToList();
+                OrderDetailsViewModel individual = new OrderDetailsViewModel
+                {
+                    OrderHeader = item,
+                    OrderDetail = _db.OrderDetail.Where(o => o.OrderId == item.Id).ToList()
+                };
                 OrderDetailsVM.Add(individual);
 
             }
@@ -110,18 +114,67 @@ namespace TangyRestaurantWebsite.Controllers
 
         }
 
-        public IActionResult OrderPickup()
+        public IActionResult OrderPickup(string searchEmail = null, string searchPhone = null, string searchOrder = null)
         {
             List<OrderDetailsViewModel> OrderDetailsVM = new List<OrderDetailsViewModel>();
-            List<OrderHeader> OrderHeaderList = _db.OrderHeader.Where(o => o.Status == SD.StatusReady)
-                .OrderByDescending(u => u.PickUpTime).ToList();
 
-            foreach (OrderHeader item in OrderHeaderList)
+            if (searchEmail != null || searchPhone != null || searchOrder != null)
             {
-                OrderDetailsViewModel individual = new OrderDetailsViewModel();
-                individual.OrderHeader = item;
-                individual.OrderDetail = _db.OrderDetail.Where(o => o.OrderId == item.Id).ToList();
-                OrderDetailsVM.Add(individual);
+                var user = new ApplicationUser();
+                List<OrderHeader> OrderHeaderList = new List<OrderHeader>();
+
+                if (searchOrder != null)
+                {
+                    OrderHeaderList = _db.OrderHeader.Where(o => o.Id == Convert.ToInt32(searchOrder)).ToList();
+                }
+                else
+                {
+                    if (searchEmail != null)
+                    {
+                        user = _db.Users.Where(u => u.Email.ToLower().Contains(searchEmail.ToLower())).FirstOrDefault();
+                    }
+                    else
+                    {
+                        if (searchPhone != null)
+                        {
+                            user = _db.Users.Where(u => u.PhoneNumber.ToLower().Contains(searchPhone.ToLower())).FirstOrDefault();
+                        }
+                    }
+                }
+                if (user != null || OrderHeaderList.Count > 0)
+                {
+                    if (OrderHeaderList.Count == 0)
+                    {
+                        OrderHeaderList = _db.OrderHeader.Where(o => o.UserId == user.Id).OrderByDescending(o => o.OrderDate).ToList();
+                    }
+                    foreach (OrderHeader item in OrderHeaderList)
+                    {
+                        OrderDetailsViewModel individual = new OrderDetailsViewModel
+                        {
+                            OrderHeader = item,
+                            OrderDetail = _db.OrderDetail.Where(o => o.OrderId == item.Id).ToList()
+                        };
+                        OrderDetailsVM.Add(individual);
+                    }
+                }
+
+
+            }
+            else
+            {
+                List<OrderHeader> OrderHeaderList = _db.OrderHeader.Where(o => o.Status == SD.StatusReady)
+                    .OrderByDescending(u => u.PickUpTime).ToList();
+
+                foreach (OrderHeader item in OrderHeaderList)
+                {
+                    OrderDetailsViewModel individual = new OrderDetailsViewModel
+                    {
+                        OrderHeader = item,
+                        OrderDetail = _db.OrderDetail.Where(o => o.OrderId == item.Id).ToList()
+                    };
+                    OrderDetailsVM.Add(individual);
+
+                }
 
             }
             return View(OrderDetailsVM);
