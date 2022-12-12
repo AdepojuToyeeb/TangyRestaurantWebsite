@@ -122,7 +122,7 @@ namespace TangyRestaurantWebsite.Controllers
             _db.SaveChanges();
             HttpContext.Session.SetInt32("CartCount", 0);
 
-            return RedirectToAction("Home", "Index");
+            return RedirectToAction("Confirm", "Order", new { id = orderHeader.Id });
 
 
         }
