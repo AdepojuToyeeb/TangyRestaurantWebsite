@@ -14,6 +14,7 @@ namespace TangyRestaurantWebsite.Models
 
         public string? Description { get; set; }
         public string? Image { get; set; }
+        
         public string? Spicyness { get; set; }
         public enum Espicy { NA = 0, Spicy = 1, VerySpicy = 2 }
 

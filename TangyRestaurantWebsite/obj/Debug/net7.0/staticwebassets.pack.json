@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
+      "Id": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/Images/0.jpeg",
+      "PackagePath": "staticwebassets/Images/0.jpeg"
+    },
+    {
+      "Id": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/Images/0.jpg",
+      "PackagePath": "staticwebassets/Images/0.jpg"
+    },
+    {
       "Id": "/Users/abc/Projects/TangyRestaurantWebsite/TangyRestaurantWebsite/wwwroot/Images/Default.jpg",
       "PackagePath": "staticwebassets/Images/Default.jpg"
     },

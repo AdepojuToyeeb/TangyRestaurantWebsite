@@ -9,7 +9,7 @@ namespace TangyRestaurantWebsite.Models
         public string? FirstName { get; set; }
 
         [PersonalData]
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
     }
 }
 

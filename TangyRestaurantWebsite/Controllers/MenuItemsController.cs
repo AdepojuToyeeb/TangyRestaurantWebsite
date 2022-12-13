@@ -12,6 +12,7 @@ using TangyRestaurantWebsite.Models;
 using TangyRestaurantWebsite.Utility;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
+using Microsoft.Extensions.Hosting.Internal;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,15 +22,13 @@ namespace TangyRestaurantWebsite.Controllers
 
     public class MenuItemsController : Controller
     {
-
-
         private readonly ApplicationDbContext _db;
-        private readonly IWebHostEnvironment hostingEnvironment;
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
         [BindProperty]
         public MenuItemViewModel MenuItemVM { get; set; }
 
-
-        public MenuItemsController(ApplicationDbContext db, IHostEnvironment _hostingEnvironment)
+        public MenuItemsController(ApplicationDbContext db, IWebHostEnvironment hostingEnvironment)
         {
             _db = db;
             _hostingEnvironment = hostingEnvironment;
@@ -38,8 +37,6 @@ namespace TangyRestaurantWebsite.Controllers
                 Category = _db.Category.ToList(),
                 MenuItem = new Models.MenuItem()
             };
-
-
         }
 
         // GET: /<controller>/
@@ -62,35 +59,38 @@ namespace TangyRestaurantWebsite.Controllers
         {
             MenuItemVM.MenuItem.SubCategoryId = Convert.ToInt32(Request.Form["SubCategoryId"].ToString());
 
+            string webRootPath = _hostingEnvironment.WebRootPath;
 
+
+
+            //Image Being Saved
+            var files = HttpContext.Request.Form.Files;
+
+            var menuItemFromDb = _db.MenuItems.Find(MenuItemVM.MenuItem.Id);
+
+            //if (files[0] != null && files[0].Length > 0)
+            //{
+                //when user uploads an image
+              //  var uploads = Path.Combine(webRootPath, "Images");
+                //var extension = files[0].FileName.Substring(files[0].FileName.LastIndexOf("."), files[0].FileName.Length - files[0].FileName.LastIndexOf("."));
+            
+                //using (var filestream = new FileStream(Path.Combine(uploads, MenuItemVM.MenuItem.Id + extension), FileMode.Create))
+                //{
+                  //  files[0].CopyTo(filestream);
+                //}
+                //menuItemFromDb.Image = @"\Images\" + MenuItemVM.MenuItem.Id + extension;
+            //}
+            //else
+           // {
+                //when user does not upload image
+             //   var uploads = Path.Combine(webRootPath, @"Images\" + SD.DefaultFoodImage);
+               // System.IO.File.Copy(uploads, webRootPath + @"\Images\" + MenuItemVM.MenuItem.Id + ".jpg");
+               // menuItemFromDb.Image = @"\Images\" + MenuItemVM.MenuItem.Id + ".jpg";
+           // }
             _db.MenuItems.Add(MenuItemVM.MenuItem);
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
 
-            //Image Being Saved
-            //string webRootPath = hostingEnvironment.WebRootPath;
-            //var files = HttpContext.Request.Form.Files;
-
-            //var menuItemFromDb = _db.MenuItems.Find(MenuItemVM.MenuItem.Id);
-
-            //if (files[0] != null && files[0].Length > 0)
-            //{
-            //when user uploads an image
-            //  var uploads = Path.Combine(webRootPath, "Images");
-            //var extension = files[0].FileName.Substring(files[0].FileName.LastIndexOf("."), files[0].FileName.Length - files[0].FileName.LastIndexOf("."));
-
-            //using (var filestream = new FileStream(Path.Combine(uploads, MenuItemVM.MenuItem.Id + extension), FileMode.Create))
-            //{
-            //  files[0].CopyTo(filestream);
-            //}
-            //menuItemFromDb.Image = @"\Images\" + MenuItemVM.MenuItem.Id + extension;
-            //}
-            //else
-            //{
-            //when user does not upload image
-            //  var uploads = Path.Combine(webRootPath, @"Images\" + SD.DefaultFoodImage);
-            //System.IO.File.Copy(uploads, webRootPath + @"\Images\" + MenuItemVM.MenuItem.Id + ".jpg");
-            //menuItemFromDb.Image = @"\Images\" + MenuItemVM.MenuItem.Id + ".jpg";
         }
 
         public JsonResult GetSubCategory(int CategoryId)

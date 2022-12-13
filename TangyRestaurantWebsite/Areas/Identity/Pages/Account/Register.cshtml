@@ -71,7 +71,7 @@
                             <p>
                                 @foreach (var provider in Model.ExternalLogins!)
                                 {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                    <button type="submit" style="display: inline-block; background: white; color: #444; width: 190px; border-radius: 5px; border: thin solid #888; box-shadow: 1px 1px 1px grey; white-space: nowrap;" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account"><span style="background: url(@provider.DisplayName) transparent 5px 50% no-repeat; display: inline-block; vertical-align: middle; width: 42px; height: 42px;"></span>@provider.DisplayName</button>
                                 }
                             </p>
                         </div>

@@ -36,6 +36,11 @@
       "TangyRestaurantWebsite/1.0.0": {
         "dependencies": {
           "AspNetCore.Mvc.Routes.DebuggingLoggerMiddleware": "1.0.0",
+          "Microsoft.AspNet.WebApi.WebHost": "5.2.9",
+          "Microsoft.AspNetCore.Authentication.Facebook": "7.0.0",
+          "Microsoft.AspNetCore.Authentication.Google": "7.0.0",
+          "Microsoft.AspNetCore.Authentication.MicrosoftAccount": "7.0.0",
+          "Microsoft.AspNetCore.Authentication.Twitter": "7.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "7.0.0",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
@@ -455,6 +460,49 @@
         }
       },
       "MessagePackAnalyzer/2.1.152": {},
+      "Microsoft.AspNet.WebApi.Client/5.2.9": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "Newtonsoft.Json.Bson": "1.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.9.0",
+            "fileVersion": "5.2.61129.10"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.9": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.9"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "assemblyVersion": "5.2.9.0",
+            "fileVersion": "5.2.61129.10"
+          }
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.9": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.9"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {
+            "assemblyVersion": "5.2.9.0",
+            "fileVersion": "5.2.61129.10"
+          }
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -467,6 +515,50 @@
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.0.0",
           "Microsoft.AspNetCore.Http": "2.0.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.0.0"
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Facebook/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
+          }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Facebook.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Google/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
+          }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.MicrosoftAccount/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
+          }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Twitter/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Twitter.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
+          }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Twitter.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/2.0.0": {
@@ -2195,6 +2287,21 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.1": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.20722"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
       "NuGet.Common/6.3.1": {
@@ -5215,6 +5322,27 @@
       "path": "messagepackanalyzer/2.1.152",
       "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
     },
+    "Microsoft.AspNet.WebApi.Client/5.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cuVhPjjNMSEFpKXweMNBbsG4RUFuuZpFBm8tSyw309U9JEjcnbB6n3EPb4xwgcy9bJ38ctIbv5G8zXUBhlrPWw==",
+      "path": "microsoft.aspnet.webapi.client/5.2.9",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9C0/gBUeMBjorRFSmR5Z2j5wznf9BP5SddN+OZE7X0BpXgivBZTZ42d0h8tIjJzSLHYVCU4HZBf51+cidCY4fQ==",
+      "path": "microsoft.aspnet.webapi.core/5.2.9",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.WebHost/5.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+mQWEe0/mWdEccKszPI7QOLduYH0ZSl1AjdRXLlM6jKrhS3LnLMBg2WuLEIlQcCS7GCs4GU5LlhycArgg3j84g==",
+      "path": "microsoft.aspnet.webapi.webhost/5.2.9",
+      "hashPath": "microsoft.aspnet.webapi.webhost.5.2.9.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -5228,6 +5356,34 @@
       "sha512": "sha512-fO3HRV8+8trdBvi0zpQBu/TtoK//JC4fdeREud08589wxc8+mkP9gzXuLMMst88fa5EkjPeIGEnc2OvRpOLyMw==",
       "path": "microsoft.aspnetcore.authentication.core/2.0.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Facebook/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i9TFH/sXhGE5FTnEFKzo7YqfljlNJX1XKvZr0ZPE7kWZVWUML01JB8bR2bAW79JpcBUI6Rk6YdcbcWJt9TywCw==",
+      "path": "microsoft.aspnetcore.authentication.facebook/7.0.0",
+      "hashPath": "microsoft.aspnetcore.authentication.facebook.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Google/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5gAaVbwSZ0T68adSu7hcPwfThqSjujFYRiNpi1XkGxhz26rLp/66QO93dSB9zlWTSmOJZWJUdIES9YSLR/cc8A==",
+      "path": "microsoft.aspnetcore.authentication.google/7.0.0",
+      "hashPath": "microsoft.aspnetcore.authentication.google.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.MicrosoftAccount/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eMeeTIJAj5AwRSUDagsZmM3EGYF1lbNv96mlzzMNouBooZUyHFesuFCM8FnIzEuwcVzZWDhq2pjM9NzdT+1jCQ==",
+      "path": "microsoft.aspnetcore.authentication.microsoftaccount/7.0.0",
+      "hashPath": "microsoft.aspnetcore.authentication.microsoftaccount.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Twitter/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-twaeVQ15RQgwspUezbYFdLcW1zF6jxDUSWqxIA3Xs3G4+HOk60SfC1nz6q5gZ5YeCW37JAWpXujE3E+RXzqkig==",
+      "path": "microsoft.aspnetcore.authentication.twitter/7.0.0",
+      "hashPath": "microsoft.aspnetcore.authentication.twitter.7.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/2.0.0": {
       "type": "package",
@@ -5949,6 +6105,13 @@
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json.Bson/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
+      "path": "newtonsoft.json.bson/1.0.1",
+      "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
     "NuGet.Common/6.3.1": {
       "type": "package",

@@ -4,14 +4,18 @@ using TangyRestaurantWebsite.Data;
 using TangyRestaurantWebsite.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+var config= builder.Configuration;
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
 builder.Services.AddRazorPages()
     .AddRazorRuntimeCompilation();
+
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 {
     options.Lockout.AllowedForNewUsers = true;
@@ -21,7 +25,18 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
     .AddDefaultUI()
     .AddDefaultTokenProviders()
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAuthentication()
+   .AddGoogle(options =>
+   {
+       IConfigurationSection googleAuthNSection =
+       config.GetSection("Authentication:Google");
+       options.ClientId = googleAuthNSection["ClientId"];
+       options.ClientSecret = googleAuthNSection["ClientSecret"];
+   });
+
 
 builder.Services.AddDistributedMemoryCache();
 

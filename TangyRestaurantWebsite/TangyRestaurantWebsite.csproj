@@ -44,6 +44,11 @@
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\UserName\" />
     <None Remove="Services\" />
+    <None Remove="Microsoft.AspNetCore.Authentication.Facebook" />
+    <None Remove="Microsoft.AspNetCore.Authentication.Google" />
+    <None Remove="Microsoft.AspNetCore.Authentication.MicrosoftAccount" />
+    <None Remove="Microsoft.AspNetCore.Authentication.Twitter" />
+    <None Remove="Microsoft.AspNet.WebApi.WebHost" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.0" />
@@ -74,6 +79,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.9" />
   </ItemGroup>
 
   <ItemGroup>
